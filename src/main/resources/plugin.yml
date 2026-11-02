@@ -1,0 +1,22 @@
+name: Stonemute
+version: '${version}'
+main: de.Z7534.stonemute.Stonemute
+api-version: '26.2'
+authors: [Z7534]
+description: '${description}'
+depend: [voicechat, LiteBans]
+softdepend: [LuckPerms]
+
+commands:
+  stonemute:
+    description: Hauptbefehl fuer das Stonemute-Plugin
+    usage: /<command> [reload]
+    permission: stonemute.admin
+
+permissions:
+  stonemute.admin:
+    description: Erlaubt das Neuladen von Stonemute
+    default: op
+  stonemute.bypass:
+    description: Spieler kann trotz LiteBans-Mute im Voicechat sprechen
+    default: false
